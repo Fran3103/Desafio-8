@@ -8,6 +8,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 30px 0;
 }
 
 .attribution a {
@@ -22,12 +23,95 @@ body {
 
 .container {
   font-family: "league spartan";
-  text-align: center;
-}
-
-head .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 377px;
+  margin: auto auto;
   margin-top: 30px;
 }
-head .texto h1 {
+
+.texto {
+  text-align: center;
+}
+.texto h1 {
   color: hsl(300deg, 43%, 22%);
+  font-size: 30px;
+  margin: 10px 60px;
+  font-weight: 700;
+}
+.texto p {
+  line-height: 20px;
+  color: hsl(303deg, 10%, 53%);
+  margin: 10px 30px;
+}
+
+.stars-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.stars-container .star {
+  width: 330px;
+  height: 70px;
+  background-color: hsl(300deg, 24%, 96%);
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 15px;
+}
+.stars-container .star img {
+  margin: 10px 10px;
+}
+.stars-container .star h3 {
+  margin-bottom: 10px;
+  color: hsl(300deg, 43%, 22%);
+}
+
+.cards-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.cards-container .card {
+  border-radius: 10px;
+  margin: 20px;
+  background-color: hsl(300deg, 43%, 22%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 12px;
+  width: 330px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  padding: 20px;
+}
+.cards-container .card img {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 20px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.cards-container .card h3 {
+  font-weight: 700;
+  grid-column: 2/3;
+  padding-top: 8px;
+  font-size: 17px;
+}
+.cards-container .card h4 {
+  color: hsl(333deg, 80%, 67%);
+  grid-column: 2/3;
+  margin-bottom: 20px;
+}
+.cards-container .card p {
+  font-size: 15px;
+  grid-column: 1/3;
+  grid-row: 3/7;
+  line-height: 20px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
